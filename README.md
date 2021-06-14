@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github](https://github.com/masterrachit777/stats-preview-card/)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Visit deployment here](https://masterrachit777.github.io/stats-preview-card/)
 
 ## My process
 
