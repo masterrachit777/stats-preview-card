@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+body {
+  max-width: 1440px;
+  margin: 0;
+  font-size: 15px;
+  background-color: #090b1a;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  width: 75%;
+  margin: 25vh auto;
+  background-color: #1b1938;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: "space-around";
+      -ms-flex-pack: "space-around";
+          justify-content: "space-around";
+}
+
+@media screen and (max-width: 790px) {
+  header {
+    width: 85%;
+    margin: 10vh auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+header .content {
+  top: 10px;
+  margin: 0 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+header .content .heading {
+  margin: 0 60px;
+  font-weight: 700;
+  font-family: inherit;
+  font-size: 2em;
+}
+
+header .content .heading span {
+  color: #aa5cdb;
+}
+
+@media screen and (max-width: 790px) {
+  header .content .heading {
+    margin: 20px;
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+
+header .content p {
+  font-family: 'Lexend Deca', sans-serif;
+  width: 65%;
+  padding-top: 5%;
+  margin-left: 60px;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media screen and (max-width: 790px) {
+  header .content p {
+    width: 85%;
+    padding-top: 5%;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+header .content .stats {
+  padding: 10% 0 5% 0;
+  margin-left: 60px;
+}
+
+header .content .stats .stats-items {
+  display: inline-block;
+  padding: 0 22px;
+}
+
+header .content .stats .stats-items h2 {
+  color: white;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 790px) {
+  header .content .stats .stats-items h2 {
+    font-size: 1.2em;
+  }
+}
+
+header .content .stats .stats-items div {
+  position: relative;
+  top: -10px;
+  font-size: clamp(0.25rem, 0.75rem, 0.8rem);
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 790px) {
+  header .content .stats .stats-items {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+  }
+}
+
+header .content .stats :first-child {
+  padding-left: 0;
+}
+
+@media screen and (max-width: 790px) {
+  header .content .stats {
+    margin: auto;
+  }
+}
+
+header img {
+  display: inline-block;
+  height: inherit;
+  width: 50%;
+}
+
+@media screen and (max-width: 790px) {
+  header img {
+    width: 100%;
+  }
+}
+
+header div.purple {
+  position: absolute;
+  left: 50%;
+  background-color: rgba(170, 92, 219, 0.3);
+  width: 50%;
+  height: 100%;
+}
+
+@media screen and (max-width: 790px) {
+  header div.purple {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 70.25vw;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

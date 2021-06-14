@@ -1,0 +1,123 @@
+@import "./variables";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@mixin flexCenter($justify) {
+    display: flex;
+    align-items: center;
+    justify-content: $justify;
+}
+
+body{
+    max-width: 1440px;
+    margin: 0;
+    font-size: 15px;
+    background-color: $VeryDarkBlue;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    position: relative;
+    width: 75%;
+    margin: 25vh auto;
+    background-color: $DarkDesaturateBlue;
+    color: $White;
+    @include flexCenter('space-around');
+    @media screen and (max-width: 790px) {
+        width: 85%;
+        margin: 10vh auto;
+        flex-direction: column-reverse;
+    }
+    .content{
+        top: 10px;
+        margin: 0 20px;
+        font-family: 'Inter', sans-serif;
+        .heading{
+            margin: 0 60px;
+            font-weight: 700;
+            font-family: inherit;
+            font-size: 2em;
+            span{
+                color: $SoftViolet;
+            }
+            @media screen and (max-width: 790px) {
+                margin: 20px;
+                font-size: 1.5em;
+                text-align: center;
+            }
+        }
+        p{
+            font-family: 'Lexend Deca', sans-serif;
+            width: 65%;
+            padding-top: 5%;
+            margin-left: 60px;
+            font-size: 0.8rem;
+            color: $SligtlyTransparentWhite;
+            @media screen and (max-width: 790px) {
+                width: 85%;
+                padding-top: 5%;
+                margin: auto;
+                text-align: center;
+            }
+        }
+        .stats{
+            padding: 10% 0 5% 0;
+            margin-left: 60px;
+            .stats-items{
+                display: inline-block;
+                padding: 0 22px;
+                h2{
+                    color: $White;
+                    font-weight: 700;
+                    @media screen and (max-width: 790px) {
+                        font-size: 1.2em;
+                    }
+                }
+                div{
+                    position: relative;
+                    top: -10px;
+                    font-size: clamp(0.25rem, 0.75rem, 0.8rem) ;
+                    font-family: 'Lexend Deca', sans-serif;
+                    font-weight: 400;
+                    color: $SligtlyTransWhite;
+                }
+                @media screen and (max-width: 790px) {
+                    display: block;
+                    text-align: center;
+                    margin: auto;
+                    padding: 0;
+                }
+            }
+            :first-child{
+                padding-left: 0;
+            }
+            @media screen and (max-width: 790px) {
+                margin: auto;
+            }
+        }
+    }
+    img{
+            display: inline-block;
+            height: inherit;
+            width: 50%;
+            @media screen and (max-width: 790px) {
+                width: 100%;
+            }
+    }
+    div.purple{
+        position: absolute;
+        left: 50%;
+        background-color: hsla(277, 64%, 61%, 0.3);
+        width: 50%;
+        height: 100%;
+        @media screen and (max-width: 790px) {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 70.25vw;
+        }
+    }
+}
